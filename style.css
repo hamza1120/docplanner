@@ -1,0 +1,165 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .section1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.introduction{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+}
+.introduction p{
+    line-height: 1.6;
+}
+.section1 h1{
+    color:#00b39b;
+    font-weight: 100;
+}
+.section2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+}
+.patients{
+    background-color:#00ccb1;
+}
+.doctors{
+    background-color: #3d83df;
+}
+.clinics{
+    background-color: #1b2734;
+}
+.box{
+    height: 300px;
+    border-radius: 7px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box p{
+    font-size: 18px;
+}
+select{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: white;
+    font-size: 18px;
+    }
+option{
+    color: grey;
+}
+.section2{
+    width: 70%;
+    margin: auto;
+}
+.section1{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+/*****section3*****/
+.section3{
+    background-color:#dff8f6;
+    height:600px;
+    margin-top:50px;
+    position: relative;
+    overflow: hidden;
+}
+.platform{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+.stats h1{
+    color:#00b39b;
+    font-weight:100;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.stats p{
+    color: gray;
+    width: 75%;
+}
+.logo{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.card h1{
+    color: #00b39b;
+    width: 100%;
+}
+.card p{
+    color: gray;
+}
+.translate{
+    transform: translateY(20px)
+}
+
+@media(max-width:500px){
+    .introduction{
+        display: grid;
+        grid-template-columns: 100%;
+
+}
+.section1{
+    width: 100%;
+}
+.section1 h1{
+    text-align: center;
+}
+.section2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:20px;
+}
+.section2{
+    width: 100%;
+}
+.platform{
+    display: grid;
+    grid-template-columns:(1,1fr) ;
+    grid-gap: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;}
+    .stats p{
+        width: 100%;
+        text-align: center;
+    }
+    .stats h1{
+        width: 100%;
+        text-align: center;
+    }
+    .card{
+        z-index: 10;
+    }
+    .logo{
+         position: absolute;
+        top: 60%;
+        left: 0;
+}
+       
+    
